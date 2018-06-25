@@ -1,0 +1,1 @@
+var a=[],l=45,p=void 0;function uh(){a=[];for(var n=1;n<l+1;n++)a.push(new Audio("./kowai-neko-rin-nya/"+n+".wav"))}function nya(){null!=p&&(a[p].pause(),a[p].currentTime=0),p=Math.floor(Math.random()*l-1)+1,a[p].play()}
