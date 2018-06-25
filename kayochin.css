@@ -1,5 +1,7 @@
 html{
     background: white;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    color:white;
 }
 body{
     margin:0;
@@ -37,7 +39,6 @@ body{
 }
 body a{
     margin: 15px;
-    font-family:"Comic Sans MS", cursive, sans-serif;
     font-size: 30px;
 }
 body a:visited{
