@@ -10,10 +10,10 @@ a=[],l=45,p=null,c=null,r={
             a[p].pause();
             a[p].currentTime = 0;
         }
-        while(c===p){
-            c = Math.floor(Math.random()*l-1)+1;
+        p = c;
+        while(c==p){
+            c = Math.floor(Math.random()*(l-1))+1;
         }
         a[c].play();
-        p=c;
     }
 }
