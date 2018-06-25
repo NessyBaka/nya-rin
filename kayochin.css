@@ -1,6 +1,6 @@
 html{
     background: white;
-    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     color:white;
 }
 body{
@@ -40,6 +40,7 @@ body{
 body a{
     margin: 15px;
     font-size: 30px;
+    color:white;
 }
 body a:visited{
     color:white;
