@@ -2,7 +2,7 @@ a=[],l=45,p=undefined,c=undefined,r={
     s:function(){
         a = [];
         for(var i = 1; i < l+1; i++){
-            a.push(new Audio('./rin-a/'+i+'.wav'))
+            a.push(new Audio('./rin-a/'+i+'.ogg'))
         }
     },
     n:function(){
@@ -17,3 +17,4 @@ a=[],l=45,p=undefined,c=undefined,r={
         a[c].play();
     }
 }
+r.s();
