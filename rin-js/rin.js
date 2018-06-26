@@ -1,12 +1,12 @@
-a=[],l=45,p=null,c=null,r={
+a=[],l=45,p=undefined,c=undefined,r={
     s:function(){
         a = [];
         for(var i = 1; i < l+1; i++){
-            a.push(new Audio('./kowai-neko-rin-nya/'+i+'.wav'))
+            a.push(new Audio('./rin-a/'+i+'.wav'))
         }
     },
     n:function(){
-        if(p != null) {
+        if(p != undefined) {
             a[p].pause();
             a[p].currentTime = 0;
         }
