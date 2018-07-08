@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#fe8e34">
-    <meta name="application-name" content="~ rinya ~">
     <meta name="keywords" content="love live, rabu raibu, school idol project, rin, idol, nya, neko, cat, button, sound">
     <meta name="description" content="Just make your day nyanderful with only one cute idol (and button of course)!">
     <meta name="author" content="twitter.com/aneyoof">
-    <title>~ nya! ~</title>
-    <link rel="icon" href="http://nya.nessy.pw/rin-res/png/favicon-x32.png" type="image/png">
+    <title>Rin's nya~ button!</title>
+    <link rel="icon" href="/rin-res/favicon.png" type="image/png">
     <style>
-    #bottom-nya,body{width:100vw;display:flex}html{background:#fff;font-family:"Comic Sans MS","Comic Sans",sans-serif;color:#fff}body{margin:0;height:100vh;justify-content:center;align-items:center;flex-direction:column;background:url(http://nya.nessy.pw/rin-res/jpg/back_min.jpg);background-size:cover}#header-nya{position:absolute;top:0;left:0}#header-rin-nya{position:absolute;height:120px;width:120px;transform:rotate3d(0,0,1,180deg) translateY(35px);background-image:url(http://nya.nessy.pw/rin-res/png/rin.png);background-size:100%}#header-link-nya{display:block;font-size:20px;margin:25px 120px;color:#fff;text-shadow:1px 2px 12px rgba(0,0,0,.25);text-decoration:none}#bottom-nya a,#bottom-nya a:visited,#header-link-nya:visited{color:#fff}#bottom-nya{position:absolute;bottom:0;transition:all 150ms ease-in-out;color:#fff;justify-content:center;align-items:center;flex-direction:column}#bottom-nya div{margin:0 0 10px;font-size:16px}#bottom-nya #source-nya{margin:5px;font-size:25px;color:#fff}#bottom-nya:hover{background-color:rgba(0,0,0,.45)}a{transition:transform 80ms ease-in-out}a:focus{transform:scale(1.1,1.1);outline:0}
+        html{background:white;font-family:"Comic Sans MS","Comic Sans",sans-serif;color:white}body{margin:0;height:100vh;width:100vw;top:0;left:0;display:flex;justify-content:center;align-items:center;flex-direction:column;background-color:transparent}#bottom-nya{position:absolute;bottom:0;left:0;width:100vw;transition:all 150ms ease-in-out;color:white;background-color:rgba(0,0,0,0.1);text-align:center}#bottom-nya #div-like-lol{margin:10px;font-size:16px;display:inline-block}#bottom-nya a,#bottom-nya a:visited{color:white}#bottom-nya:hover{background-color:rgba(0,0,0,0.45)}a{transition:transform 80ms ease-in-out}a:focus{font-weight:bold;font-size:20px;outline:0}a:focus #bottom-nya{background-color:rgba(0,0,0,0.45)}#h{display:inline-block;background-image:url(/rin-res/heart.png);background-size:100%;height:20px;width:20px;vertical-align:middle}#background{display:block;position:absolute;top:0;left:0;width:100vw;height:100vh;overflow:hidden;z-index:-999;opacity:.8}#background-source{user-select:none;display:block;width:100vw;height:100vh;object-fit:cover}
     </style>
     <!--This page only code-->
     <script src="./rin-js/rin.min.js" async></script>
 </head>
-<body role="main">
+<body role="application">
     <div id="pl"><!--This thing was created for preloading a hovered state background--></div>
-    <button id="nya-button" onclick="r.n()" aria-label="A button that makes rin say 'nya'" tabindex="0" title="A button that makes rin say 'nya~'" style="width:250px;height:250px;border-radius:125px"></button>
-    <div id="header-nya">
-        <div id="header-rin-nya"></div>
-        <a id="header-link-nya" href="https://love-live.wikia.com/wiki/Rin_Hoshizora" target="_blank" rel="noopener" title="Hoshizora Rin wiki page @ Love Live! Wikia">~ Who is the <b>Hoshizora Rin?</b> ~</a>
-    </div>
+    <picture id="background">
+        <source id="background-webp" srcset="rin-res/background-blurred.webp">
+        <source id="background-jpeg" srcset="rin-res/background-blurred.jpg">
+        <img id="background-source" src="rin-res/background-blurred.jpg">
+    </picture>
+    <button id="nya-button" onclick="r.p()" aria-label="A button that makes rin say 'nya'" tabindex="0" title="A button that makes rin say 'nya~'" style="width:250px;height:250px;border-radius:125px"></button>
     <div id="bottom-nya">
-        <a id="source-nya" href="https://www.youtube.com/watch?v=v1n9mfrCPiU" target="_blank" rel="noopener" title="source video from youtube for sound samples">link to source video nya~</a>
-        <div>Created with 💗 by <a href="https://twitter.com/aneyoof" target="_blank" rel="author" title="aneyo @ twitter">@aneyo</a></div>
+        <span id="div-like-lol">Created with <i id="h" alt="❤"></i> by <b>aneyo</b> - <a href="https://twitter.com/aneyoof" target="_blank" rel="noreferrer" title="aneyo @ twitter">Twitter</a> - <a href="https://www.youtube.com/watch?v=v1n9mfrCPiU" target="_blank" rel="noopener" title="source video from youtube for sound samples">Audio samples video source</a> - <a href="https://love-live.wikia.com/wiki/Rin_Hoshizora" target="_blank" rel="noopener" title="Hoshizora Rin wiki page @ Love Live! Wikia">Who is the <b>Hoshizora Rin?</b></a></span>
     </div>
     <!--This page only style-->
     <style>
-    #nya-button:hover,#pl{background-image:url(http://nya.nessy.pw/rin-res/jpg/nya-button-hover_min.jpg)}#pl{display:none}#nya-button{box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);background:url(http://nya.nessy.pw/rin-res/jpg/nya-button_min.jpg) no-repeat #fff;background-size:100%;border:none;cursor:pointer;transition:all 90ms ease-in-out}#nya-button:active{box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)!important;transform:scale(.95,.95)!important;background-image:url(http://nya.nessy.pw/rin-res/jpg/nya-button-hover_min.jpg)!important}#nya-button:hover{box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);transform:scale(.98,.98)}#nya-button:focus{outline:0}
+        #pl{background-image:url(/rin-res/button-hover.jpg);display:none}#nya-button{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);background:white url(/rin-res/button.jpg) no-repeat;background-size:100%;border:0;cursor:pointer;transition:all 90ms ease-in-out}#nya-button:active{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23) !important;transform:scale(.95,.95) !important;background-image:url(/rin-res/button-hover.jpg) !important}#nya-button:hover{box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);transform:scale(.98,.98);background-image:url(/rin-res/button-hover.jpg)}#nya-button:focus{outline:0}
     </style>
 </body>
 </html>

@@ -4,3 +4,5 @@ rin-res/nya-button.png
 rin-res/nya-button-hover.png
 rin-a/*.wav
 rin-a/*.xmp
+/.idea
+server.bat
