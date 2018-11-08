@@ -43,7 +43,7 @@ var
                 }
             }
 
-            a[c].play().catch(function (reason) { Console.error(reason) });//    Setting catch statement and start playing nya-sound
+            a[c].play().catch(function (reason) { console.error(reason) });//    Setting catch statement and start playing nya-sound
         },
         w:function () {
             /*
