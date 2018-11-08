@@ -6,3 +6,4 @@ rin-a/*.wav
 rin-a/*.xmp
 /.idea
 server.bat
+.DS_STORE

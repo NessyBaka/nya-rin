@@ -1,4 +1,4 @@
-"use strict";
+"use strict";//yes
 
 var
     a=[],//    Array with audio-nya files that can be played
@@ -17,7 +17,7 @@ var
             */
             a = [];//   Clearing array with files (just in case if there's sounds in array(?))
             for(var i = 1; i < n+1; i++){
-                a.push(new Audio('./rin-a/'+i+'.ogg'))//    Pushing to audio array all n files from dir at root/rin-a/
+                a.push(new Audio('./rin-a/'+i+'.wav'))//    Pushing to audio array all n files from dir at root/rin-a/
             }
         },
         p:function(){
@@ -27,7 +27,7 @@ var
             */
             if(ie){
                 alert("Probably your browser is Internet Explorer or Safari\nUnfortunately, both of them doesn't support .ogg files so we can't play sounds here :(\n\nP.S. Try another browser, ie sucks, oh well I'll swap ogg to mp3 later :P");
-                return;//   Alert user if their browser sucks
+                return;//   Alert user if their browser sucks (sorry safari users ;w;)
             }
 
             if(c !== null) {
@@ -84,5 +84,5 @@ var
         }
 };
 
-r.w();
-r.n();//    Starting this bad(neko) boy(girl)
+r.w();//    Firstly, check if browser supports webp
+r.n();//    Then start this bad(neko) boy(girl)
