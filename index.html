@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#fe8e34">
-    <meta name="keywords" content="love live, rabu raibu, school idol project, rin, idol, nya, neko, cat, button, sound">
-    <meta name="description" content="Just make your day nyanderful with only one cute idol (and a button of course)!">
-    <meta name="author" content="twitter.com/aneyoof">
-    <meta name="google-site-verification" content="68AmyFzDPO1l7R9DW8m6eh-xZf0OJ-QiiJUDqaBpYMs" />
-    <title>Rin's nya~ button!</title>
-    <link rel="icon" href="/rin-res/favicon.png" type="image/png">
-    <style>
-        html{background:white;font-family:"Comic Sans MS","Comic Sans",sans-serif;color:white}body{margin:0;height:100vh;width:100vw;top:0;left:0;display:flex;justify-content:center;align-items:center;flex-direction:column;background-color:transparent}#bottom-nya{position:absolute;bottom:0;left:0;width:100vw;transition:all 150ms ease-in-out;color:white;background-color:rgba(0,0,0,0.1);text-align:center}#bottom-nya #div-like-lol{margin:10px;font-size:16px;display:inline-block}#bottom-nya a,#bottom-nya a:visited{color:white}#bottom-nya:hover{background-color:rgba(0,0,0,0.45)}a{transition:transform 80ms ease-in-out}a:focus{font-weight:bold;font-size:20px;outline:0}a:focus #bottom-nya{background-color:rgba(0,0,0,0.45)}#h{display:inline-block;background-image:url(/rin-res/heart.png);background-size:100%;height:20px;width:20px;vertical-align:middle}#background{display:block;position:absolute;top:0;left:0;width:100vw;height:100vh;overflow:hidden;z-index:-999;opacity:.8}#background-source{user-select:none;display:block;width:100vw;height:100vh;object-fit:cover}
-    </style>
-    <!--This page only code-->
-    <script src="./rin-js/rin.min.js" async></script>
-</head>
-<body role="application">
-    <div id="pl"><!-- Hovered button background preload "hack" --></div>
-    <picture id="background">
-        <source id="background-webp" srcset="rin-res/background-blurred.webp">
-        <source id="background-jpeg" srcset="rin-res/background-blurred.jpg">
-        <img id="background-source" src="rin-res/background-blurred.jpg">
-    </picture>
-    <button id="nya-button" onclick="r.p()" aria-label="A button that makes rin say 'nya'" tabindex="0" title="A button that makes rin say 'nya~'" style="width:250px;height:250px;border-radius:125px"></button>
-    <div id="bottom-nya">
-        <span id="div-like-lol">Created with <i id="h" alt="❤"></i> by <b>aneyo</b> - <a href="https://twitter.com/aneyoof" target="_blank" rel="noreferrer" title="aneyo @ twitter">Twitter</a> - <a href="https://www.youtube.com/watch?v=v1n9mfrCPiU" target="_blank" rel="noopener" title="source video from youtube for sound samples">Audio samples source</a> - <a href="https://love-live.wikia.com/wiki/Rin_Hoshizora" target="_blank" rel="noopener" title="Hoshizora Rin wiki page @ Love Live! Wikia">Who is <b>Hoshizora Rin?</b></a></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta
+      name="keywords"
+      content="love live,rabu raibu,school idol project,rin,idol,nya,neko,cat,button,sound,rinboy"
+    />
+    <meta
+      name="description"
+      content="Just make your day *nyanderful* with only one cute idol and a button!"
+    />
+    <title>ニャー!</title>
+    <link rel="icon" href="/rin-res/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/resources/icons/awesome.min.css" />
+    <link rel="stylesheet" href="/rin.min.css" />
+    <script src="/rin.min.js" async></script>
+  </head>
+  <body>
+    <div id="rin" class="button">
+      <div class="center"></div>
     </div>
-    <!--This page only style-->
-    <style>
-        #pl{background-image:url(/rin-res/button-hover.jpg);display:none}#nya-button{box-shadow:0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);background:white url(/rin-res/button.jpg) no-repeat;background-size:100%;border:0;cursor:pointer;transition:all 90ms ease-in-out}#nya-button:active{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23) !important;transform:scale(.95,.95) !important;background-image:url(/rin-res/button-hover.jpg) !important}#nya-button:hover{box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);transform:scale(.98,.98);background-image:url(/rin-res/button-hover.jpg)}#nya-button:focus{outline:0}
-    </style>
-</body>
+    <div class="footer">
+      <div class="notice">
+        <span>
+          Art and sound samples are taken from
+        </span>
+        <a
+          href="https://lovelive-as.bushimo.jp/"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Love Live! School Idol Festival All Stars</a
+        >
+        <span>and</span>
+        <a
+          href="http://www.lovelive-anime.jp/otonokizaka"
+          rel="noopener noreferrer"
+          target="_blank"
+          >Love Live! School Idol Project</a
+        >
+      </div>
+      <div class="me">
+        <a
+          href="https://github.com/aneyo"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fab fa-github-alt"></i> @aneyo</a
+        >
+        <a
+          href="https://twitter.com/aneyoof"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fab fa-twitter"></i> @aneyoof</a
+        >
+      </div>
+    </div>
+  </body>
 </html>
