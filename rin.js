@@ -2,6 +2,7 @@
 
 function Rin() {
   this.samples = []; // Audio samples
+  this.loaded = 0; // How many samples loaded
   this.meta = {
     samples: 45, // Samples count, we'll use hardcoded length value since we can't count files in dir from browser
     path: "/resources/audio/", // Path to samples
@@ -10,14 +11,18 @@ function Rin() {
   this.audio = new Audio(); // Audio object
 }
 
+Rin.prototype.ready = function() {
+  this.button.classList.toggle("ready", true);
+  this.setup(); // Setup events after everything is loaded
+};
+
 Rin.prototype.init = function(button) {
   this.button = button;
-  this.load(); // Generating sample paths
-  this.setup(); // Setuping events
+  this.load(); // Preload samples
 };
 
 Rin.prototype.load = function() {
-  for (var i = 0; i < this.meta.samples; i++)
+  for (var i = 0; i < this.meta.samples; i++) {
     this.samples.push(
       document.location.protocol +
       "//" +
@@ -27,6 +32,20 @@ Rin.prototype.load = function() {
         "." +
         this.meta.type
     ); /* ikr? */
+
+    var preloaded = new Audio(); // god fucking lord
+    preloaded.addEventListener(
+      "canplaythrough",
+      this.preloaded.bind(this),
+      false
+    );
+    preloaded.src = this.samples[i];
+  }
+};
+
+Rin.prototype.preloaded = function() {
+  this.loaded++;
+  if (this.loaded >= this.meta.samples) this.ready();
 };
 
 Rin.prototype.play = function() {

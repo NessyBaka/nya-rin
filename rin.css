@@ -65,8 +65,8 @@ body::before {
   outline: none;
 }
 
-.button:active,
-.button.space {
+.button.ready:active,
+.button.ready.space {
   --depth: 0;
 }
 
