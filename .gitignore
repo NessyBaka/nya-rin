@@ -1,9 +1,4 @@
-rin-css/
-rin-res/back.png
-rin-res/nya-button.png
-rin-res/nya-button-hover.png
-rin-a/*.wav
-rin-a/*.xmp
-/.idea
-server.bat
-.DS_STORE
+.jshint/
+.vscode/
+rin-*/
+.jshintrc
